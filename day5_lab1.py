@@ -4,8 +4,8 @@ count = 0
 largest = 0
 
 for item in list:
-		count += item
-		if item > largest:
+		count += item # could use sum(list) instead of looping manually
+		if item > largest: # could use max(list) instead of looping manually
 				largest = item
 
 even_numbers = [item for item in list if item % 2 == 0]
